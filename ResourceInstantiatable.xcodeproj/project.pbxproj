@@ -9,7 +9,15 @@
 /* Begin PBXBuildFile section */
 		6A37325F1BB97DD200A38C86 /* ResourceInstantiatable.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A37325E1BB97DD200A38C86 /* ResourceInstantiatable.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6A3732661BB97DD200A38C86 /* ResourceInstantiatable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A37325B1BB97DD200A38C86 /* ResourceInstantiatable.framework */; settings = {ASSET_TAGS = (); }; };
-		6A37326B1BB97DD200A38C86 /* ResourceInstantiatableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37326A1BB97DD200A38C86 /* ResourceInstantiatableTests.swift */; };
+		6A3732761BB97DF000A38C86 /* ResourceInstantiatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732751BB97DF000A38C86 /* ResourceInstantiatable.swift */; settings = {ASSET_TAGS = (); }; };
+		6A3732781BB97EC000A38C86 /* StoryboardInstantiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732771BB97EC000A38C86 /* StoryboardInstantiator.swift */; settings = {ASSET_TAGS = (); }; };
+		6A37327A1BB97F1F00A38C86 /* NibInstantiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732791BB97F1F00A38C86 /* NibInstantiator.swift */; settings = {ASSET_TAGS = (); }; };
+		6A37327C1BB9804500A38C86 /* StoryboardInstantiatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37327B1BB9804500A38C86 /* StoryboardInstantiatorTests.swift */; settings = {ASSET_TAGS = (); }; };
+		6A37327F1BB9807C00A38C86 /* Test.Storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A37327E1BB9807C00A38C86 /* Test.Storyboard */; settings = {ASSET_TAGS = (); }; };
+		6A3732841BB9821B00A38C86 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732831BB9821B00A38C86 /* TestViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		6A3732871BB9E5AC00A38C86 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3732861BB9E5AC00A38C86 /* Test.xib */; settings = {ASSET_TAGS = (); }; };
+		6A3732891BB9E5B900A38C86 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732881BB9E5B900A38C86 /* TestView.swift */; settings = {ASSET_TAGS = (); }; };
+		6A37328B1BB9E5DF00A38C86 /* NibInstantiatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37328A1BB9E5DF00A38C86 /* NibInstantiatorTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +35,16 @@
 		6A37325E1BB97DD200A38C86 /* ResourceInstantiatable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResourceInstantiatable.h; sourceTree = "<group>"; };
 		6A3732601BB97DD200A38C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A3732651BB97DD200A38C86 /* ResourceInstantiatableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ResourceInstantiatableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A37326A1BB97DD200A38C86 /* ResourceInstantiatableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceInstantiatableTests.swift; sourceTree = "<group>"; };
 		6A37326C1BB97DD200A38C86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A3732751BB97DF000A38C86 /* ResourceInstantiatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceInstantiatable.swift; sourceTree = "<group>"; };
+		6A3732771BB97EC000A38C86 /* StoryboardInstantiator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiator.swift; sourceTree = "<group>"; };
+		6A3732791BB97F1F00A38C86 /* NibInstantiator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiator.swift; sourceTree = "<group>"; };
+		6A37327B1BB9804500A38C86 /* StoryboardInstantiatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardInstantiatorTests.swift; sourceTree = "<group>"; };
+		6A37327E1BB9807C00A38C86 /* Test.Storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Test.Storyboard; sourceTree = "<group>"; };
+		6A3732831BB9821B00A38C86 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		6A3732861BB9E5AC00A38C86 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
+		6A3732881BB9E5B900A38C86 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		6A37328A1BB9E5DF00A38C86 /* NibInstantiatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +89,9 @@
 			children = (
 				6A37325E1BB97DD200A38C86 /* ResourceInstantiatable.h */,
 				6A3732601BB97DD200A38C86 /* Info.plist */,
+				6A3732751BB97DF000A38C86 /* ResourceInstantiatable.swift */,
+				6A3732771BB97EC000A38C86 /* StoryboardInstantiator.swift */,
+				6A3732791BB97F1F00A38C86 /* NibInstantiator.swift */,
 			);
 			path = ResourceInstantiatable;
 			sourceTree = "<group>";
@@ -80,10 +99,39 @@
 		6A3732691BB97DD200A38C86 /* ResourceInstantiatableTests */ = {
 			isa = PBXGroup;
 			children = (
-				6A37326A1BB97DD200A38C86 /* ResourceInstantiatableTests.swift */,
+				6A3732851BB9E59B00A38C86 /* Views */,
+				6A3732821BB981A800A38C86 /* Controllers */,
+				6A37327D1BB9805800A38C86 /* Resources */,
 				6A37326C1BB97DD200A38C86 /* Info.plist */,
+				6A37327B1BB9804500A38C86 /* StoryboardInstantiatorTests.swift */,
+				6A37328A1BB9E5DF00A38C86 /* NibInstantiatorTests.swift */,
 			);
 			path = ResourceInstantiatableTests;
+			sourceTree = "<group>";
+		};
+		6A37327D1BB9805800A38C86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6A37327E1BB9807C00A38C86 /* Test.Storyboard */,
+				6A3732861BB9E5AC00A38C86 /* Test.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6A3732821BB981A800A38C86 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6A3732831BB9821B00A38C86 /* TestViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6A3732851BB9E59B00A38C86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6A3732881BB9E5B900A38C86 /* TestView.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +190,7 @@
 		6A3732521BB97DD200A38C86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = CAPH;
 				TargetAttributes = {
@@ -183,6 +232,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A37327F1BB9807C00A38C86 /* Test.Storyboard in Resources */,
+				6A3732871BB9E5AC00A38C86 /* Test.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +244,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3732781BB97EC000A38C86 /* StoryboardInstantiator.swift in Sources */,
+				6A37327A1BB97F1F00A38C86 /* NibInstantiator.swift in Sources */,
+				6A3732761BB97DF000A38C86 /* ResourceInstantiatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A37326B1BB97DD200A38C86 /* ResourceInstantiatableTests.swift in Sources */,
+				6A3732891BB9E5B900A38C86 /* TestView.swift in Sources */,
+				6A37328B1BB9E5DF00A38C86 /* NibInstantiatorTests.swift in Sources */,
+				6A3732841BB9821B00A38C86 /* TestViewController.swift in Sources */,
+				6A37327C1BB9804500A38C86 /* StoryboardInstantiatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +364,7 @@
 		6A3732701BB97DD200A38C86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,12 +375,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.caph.ResourceInstantiatable;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		6A3732711BB97DD200A38C86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
