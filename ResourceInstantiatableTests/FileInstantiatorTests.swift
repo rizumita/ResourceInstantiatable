@@ -12,8 +12,8 @@ import XCTest
 class FileInstantiatorTests: XCTestCase {
     
     struct FilesManager {
-        static let stringsPList = FileInstantiator<[String]>(name: "Strings", type: "plist", bundle: NSBundle(forClass: FileInstantiatorTests.self)) { NSArray(contentsOfFile: $0) as! [String] }
-        static let dictPList = FileInstantiator<[String : String]>(name: "Dict", type: "plist", bundle: NSBundle(forClass: FileInstantiatorTests.self)) { NSDictionary(contentsOfFile: $0) as! [String : String] }
+        static let stringsPList = FileInstantiator<[String]>(name: "Strings", type: "plist", bundle: NSBundle(forClass: FileInstantiatorTests.self)) { NSArray(contentsOfFile: $0) as? [String] }
+        static let dictPList = FileInstantiator<[String : String]>(name: "Dict", type: "plist", bundle: NSBundle(forClass: FileInstantiatorTests.self)) { NSDictionary(contentsOfFile: $0) as? [String : String] }
         static let textFile = FileInstantiator<String>(name: "Text", bundle: NSBundle(forClass: FileInstantiatorTests.self)) { try String(contentsOfFile: $0) }
     }
     

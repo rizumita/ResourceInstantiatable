@@ -10,7 +10,7 @@ import Foundation
 
 public protocol FileInstantiatable: ResourceInstantiatable {
 
-    var initialize: String throws -> InstanceType! { get }
+    var initialize: String throws -> InstanceType? { get }
 
 }
 
@@ -21,20 +21,20 @@ public struct FileInstantiator<T>: FileInstantiatable {
     public let name: String
     public let type: String?
     public let bundle: NSBundle
-    public let initialize: String throws -> InstanceType!
+    public let initialize: String throws -> InstanceType?
 
     public func instantiate() throws -> InstanceType {
         guard let path = bundle.pathForResource(name, ofType: type) else {
             throw ResourceInstantiatableError.CannotRetrieveResourcePath
         }
-        guard let result = try? initialize(path) else {
+        guard let initialized = try? initialize(path), let result = initialized else {
             throw ResourceInstantiatableError.CannotInstantiate
         }
-        
+
         return result
     }
     
-    init(name: String, type: String? = nil, bundle: NSBundle = NSBundle.mainBundle(), initialize: String throws -> InstanceType!) {
+    init(name: String, type: String? = nil, bundle: NSBundle = NSBundle.mainBundle(), initialize: String throws -> InstanceType?) {
         self.name = name
         self.type = type
         self.bundle = bundle
