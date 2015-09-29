@@ -85,4 +85,15 @@ class FileInstantiatorTests: XCTestCase {
         }
     }
     
+    func testFailInstantiating() {
+        let textFile = FileInstantiator<String>(name: "Text", bundle: NSBundle(forClass: FileInstantiatorTests.self)) { _ in throw NSError(domain: "testdomain", code: 1, userInfo: nil) }
+        do {
+            try textFile.instantiate()
+            XCTFail()
+        }
+        catch let e as NSError {
+            XCTAssertEqual(e.domain, "testdomain")
+        }
+    }
+    
 }

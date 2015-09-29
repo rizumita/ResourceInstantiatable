@@ -27,7 +27,7 @@ public struct FileInstantiator<T>: FileInstantiatable {
         guard let path = bundle.pathForResource(name, ofType: type) else {
             throw ResourceInstantiatableError.CannotRetrieveResourcePath
         }
-        guard let initialized = try? initialize(path), let result = initialized else {
+        guard let result = try initialize(path) else {
             throw ResourceInstantiatableError.CannotInstantiate
         }
 
