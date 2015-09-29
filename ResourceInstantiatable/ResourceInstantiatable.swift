@@ -9,15 +9,21 @@
 import Foundation
 
 public protocol ResourceInstantiatable {
+    
     typealias InstanceType
-    func instantiate() -> InstanceType
-    func instantiate(configure: (InstanceType -> Void)?) -> InstanceType
+
+    func instantiate() throws -> InstanceType
+
+    func instantiate(configure: (inout InstanceType) -> Void) throws -> InstanceType
+
 }
 
 public extension ResourceInstantiatable {
-    func instantiate(configure: (InstanceType -> Void)?) -> InstanceType {
-        let instance = instantiate()
-        configure?(instance)
+
+    func instantiate(configure: (inout InstanceType) -> Void) throws -> InstanceType {
+        var instance = try instantiate()
+        configure(&instance)
         return instance
     }
+
 }

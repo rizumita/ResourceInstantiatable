@@ -27,16 +27,29 @@ class StoryboardInstantiatorTests: XCTestCase {
     }
     
     func testInstantiate() {
-        XCTAssertEqual(StoryboardsManager.testViewController.instantiate().message, "InitialViewController")
-        XCTAssertEqual(StoryboardsManager.secondaryViewController.instantiate().message, "SecondaryViewController")
+        if let controller = try? StoryboardsManager.testViewController.instantiate() {
+            XCTAssertEqual(controller.message, "InitialViewController")
+        } else {
+            XCTFail()
+        }
+
+        if let controller = try? StoryboardsManager.secondaryViewController.instantiate() {
+            XCTAssertEqual(controller.message, "SecondaryViewController")
+        } else {
+            XCTFail()
+        }
     }
     
     func testInstantiateWithConfigure() {
-        func configure(controller: TestViewController) {
+        func configure(inout controller: TestViewController) {
             controller.message = "Configured"
         }
         
-        XCTAssertEqual(StoryboardsManager.testViewController.instantiate(configure).message, "Configured")
+        if let controller = try? StoryboardsManager.testViewController.instantiate(configure) {
+            XCTAssertEqual(controller.message, "Configured")
+        } else {
+            XCTFail()
+        }
     }
     
 }

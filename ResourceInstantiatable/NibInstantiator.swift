@@ -9,18 +9,20 @@
 import Foundation
 
 public struct NibInstantiator<T: UIView>: ResourceInstantiatable {
+
     public typealias InstanceType = T
     
     let name: String
-    let bundle: NSBundle?
+    let bundle: NSBundle
     
-    public func instantiate() -> InstanceType {
+    public func instantiate() throws -> InstanceType {
         let nib = UINib(nibName: name, bundle: bundle)
         return nib.instantiateWithOwner(nil, options: nil).first as! InstanceType
     }
     
-    init(name: String, bundle: NSBundle? = nil) {
+    init(name: String, bundle: NSBundle = NSBundle.mainBundle()) {
         self.name = name
         self.bundle = bundle
     }
+
 }

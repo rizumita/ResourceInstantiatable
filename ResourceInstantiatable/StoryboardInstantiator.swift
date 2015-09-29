@@ -9,13 +9,14 @@
 import Foundation
 
 public struct StoryboardInstantiator<T: UIViewController>: ResourceInstantiatable {
+
     public typealias InstanceType = T
     
     let name: String
-    let bundle: NSBundle?
+    let bundle: NSBundle
     let identifier: String?
     
-    public func instantiate() -> InstanceType {
+    public func instantiate() throws -> InstanceType {
         let storyboard = UIStoryboard(name: name, bundle: bundle)
         if let identifier = identifier {
             return storyboard.instantiateViewControllerWithIdentifier(identifier) as! InstanceType
@@ -24,9 +25,10 @@ public struct StoryboardInstantiator<T: UIViewController>: ResourceInstantiatabl
         }
     }
     
-    init(name: String, bundle: NSBundle? = nil, identifier: String? = nil) {
+    init(name: String, bundle: NSBundle = NSBundle.mainBundle(), identifier: String? = nil) {
         self.name = name
         self.bundle = bundle
         self.identifier = identifier
     }
+
 }

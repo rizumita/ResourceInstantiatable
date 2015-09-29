@@ -26,14 +26,19 @@ class NibInstantiatorTests: XCTestCase {
     }
     
     func testInstantiate() {
-        XCTAssertEqual(NibsManager.testView.instantiate().dynamicType.description(), "ResourceInstantiatableTests.TestView")
+        XCTAssertEqual(try? NibsManager.testView.instantiate().dynamicType.description(), "ResourceInstantiatableTests.TestView")
     }
     
     func testInstantiateWithConfigure() {
-        func configure(view: TestView) {
+        func configure(inout view: TestView) {
             view.hidden = true
         }
-        XCTAssertTrue(NibsManager.testView.instantiate(configure).hidden)
+        
+        if let testView = try? NibsManager.testView.instantiate(configure) {
+            XCTAssertTrue(testView.hidden)
+        } else {
+            XCTFail()
+        }
     }
     
 }

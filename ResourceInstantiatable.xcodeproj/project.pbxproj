@@ -18,6 +18,12 @@
 		6A3732871BB9E5AC00A38C86 /* Test.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A3732861BB9E5AC00A38C86 /* Test.xib */; settings = {ASSET_TAGS = (); }; };
 		6A3732891BB9E5B900A38C86 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732881BB9E5B900A38C86 /* TestView.swift */; settings = {ASSET_TAGS = (); }; };
 		6A37328B1BB9E5DF00A38C86 /* NibInstantiatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37328A1BB9E5DF00A38C86 /* NibInstantiatorTests.swift */; settings = {ASSET_TAGS = (); }; };
+		6A37328F1BB9EACD00A38C86 /* FileInstantiator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37328E1BB9EACD00A38C86 /* FileInstantiator.swift */; settings = {ASSET_TAGS = (); }; };
+		6A3732931BBA00B000A38C86 /* ResourceInstantiatableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732921BBA00B000A38C86 /* ResourceInstantiatableError.swift */; settings = {ASSET_TAGS = (); }; };
+		6A3732951BBA04AA00A38C86 /* FileInstantiatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A3732941BBA04AA00A38C86 /* FileInstantiatorTests.swift */; settings = {ASSET_TAGS = (); }; };
+		6A3732971BBA04E200A38C86 /* Strings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3732961BBA04E200A38C86 /* Strings.plist */; settings = {ASSET_TAGS = (); }; };
+		6A3732991BBA0AE700A38C86 /* Dict.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A3732981BBA0AE700A38C86 /* Dict.plist */; settings = {ASSET_TAGS = (); }; };
+		6A37329B1BBA0EE600A38C86 /* Text in Resources */ = {isa = PBXBuildFile; fileRef = 6A37329A1BBA0EE600A38C86 /* Text */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		6A3732861BB9E5AC00A38C86 /* Test.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Test.xib; sourceTree = "<group>"; };
 		6A3732881BB9E5B900A38C86 /* TestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		6A37328A1BB9E5DF00A38C86 /* NibInstantiatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibInstantiatorTests.swift; sourceTree = "<group>"; };
+		6A37328E1BB9EACD00A38C86 /* FileInstantiator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInstantiator.swift; sourceTree = "<group>"; };
+		6A3732921BBA00B000A38C86 /* ResourceInstantiatableError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceInstantiatableError.swift; sourceTree = "<group>"; };
+		6A3732941BBA04AA00A38C86 /* FileInstantiatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileInstantiatorTests.swift; sourceTree = "<group>"; };
+		6A3732961BBA04E200A38C86 /* Strings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Strings.plist; sourceTree = "<group>"; };
+		6A3732981BBA0AE700A38C86 /* Dict.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Dict.plist; sourceTree = "<group>"; };
+		6A37329A1BBA0EE600A38C86 /* Text */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Text; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,8 +102,10 @@
 				6A37325E1BB97DD200A38C86 /* ResourceInstantiatable.h */,
 				6A3732601BB97DD200A38C86 /* Info.plist */,
 				6A3732751BB97DF000A38C86 /* ResourceInstantiatable.swift */,
+				6A37328E1BB9EACD00A38C86 /* FileInstantiator.swift */,
 				6A3732771BB97EC000A38C86 /* StoryboardInstantiator.swift */,
 				6A3732791BB97F1F00A38C86 /* NibInstantiator.swift */,
+				6A3732921BBA00B000A38C86 /* ResourceInstantiatableError.swift */,
 			);
 			path = ResourceInstantiatable;
 			sourceTree = "<group>";
@@ -105,6 +119,7 @@
 				6A37326C1BB97DD200A38C86 /* Info.plist */,
 				6A37327B1BB9804500A38C86 /* StoryboardInstantiatorTests.swift */,
 				6A37328A1BB9E5DF00A38C86 /* NibInstantiatorTests.swift */,
+				6A3732941BBA04AA00A38C86 /* FileInstantiatorTests.swift */,
 			);
 			path = ResourceInstantiatableTests;
 			sourceTree = "<group>";
@@ -114,6 +129,9 @@
 			children = (
 				6A37327E1BB9807C00A38C86 /* Test.Storyboard */,
 				6A3732861BB9E5AC00A38C86 /* Test.xib */,
+				6A3732961BBA04E200A38C86 /* Strings.plist */,
+				6A3732981BBA0AE700A38C86 /* Dict.plist */,
+				6A37329A1BBA0EE600A38C86 /* Text */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -232,8 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A3732991BBA0AE700A38C86 /* Dict.plist in Resources */,
 				6A37327F1BB9807C00A38C86 /* Test.Storyboard in Resources */,
+				6A3732971BBA04E200A38C86 /* Strings.plist in Resources */,
 				6A3732871BB9E5AC00A38C86 /* Test.xib in Resources */,
+				6A37329B1BBA0EE600A38C86 /* Text in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +267,8 @@
 			files = (
 				6A3732781BB97EC000A38C86 /* StoryboardInstantiator.swift in Sources */,
 				6A37327A1BB97F1F00A38C86 /* NibInstantiator.swift in Sources */,
+				6A37328F1BB9EACD00A38C86 /* FileInstantiator.swift in Sources */,
+				6A3732931BBA00B000A38C86 /* ResourceInstantiatableError.swift in Sources */,
 				6A3732761BB97DF000A38C86 /* ResourceInstantiatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +279,7 @@
 			files = (
 				6A3732891BB9E5B900A38C86 /* TestView.swift in Sources */,
 				6A37328B1BB9E5DF00A38C86 /* NibInstantiatorTests.swift in Sources */,
+				6A3732951BBA04AA00A38C86 /* FileInstantiatorTests.swift in Sources */,
 				6A3732841BB9821B00A38C86 /* TestViewController.swift in Sources */,
 				6A37327C1BB9804500A38C86 /* StoryboardInstantiatorTests.swift in Sources */,
 			);
